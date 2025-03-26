@@ -1,0 +1,139 @@
+/* style1.css placeholder - Add your 300+ line CSS here */
+/* Style 1: Glassmorphism with pastel gradients */
+body {
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-wrapper {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+}
+
+.portfolio-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.portfolio-name {
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 138, 0, 0.4);
+    }
+    to {
+        text-shadow: 0 0 30px rgba(229, 46, 113, 0.7);
+    }
+}
+
+.portfolio-interest {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.portfolio-basic-info p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.portfolio-skills h2, 
+.portfolio-projects h2, 
+.portfolio-experience h2, 
+.portfolio-achievements h2, 
+.portfolio-testimonials h2, 
+.portfolio-certificates h2 {
+    border-bottom: 2px solid #ff8a00;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.portfolio-skill-list li, 
+.portfolio-extra-skills li {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 8px 14px;
+    margin: 6px 0;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-skill-list li:hover, 
+.portfolio-extra-skills li:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-project-gallery img {
+    width: 32%;
+    margin: 1%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-project-gallery img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-testimonials blockquote {
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 10px 0;
+    border-left: 5px solid #e52e71;
+}
+
+.certificates-gallery img {
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.4s;
+}
+
+.certificates-gallery img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.portfolio-footer {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.portfolio-footer a {
+    text-decoration: none;
+    padding: 12px 24px;
+    background: #ff8a00;
+    color: white;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.portfolio-footer a:hover {
+    background: #e52e71;
+}
+
+/* Add glowing border to the wrapper */
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 138, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(229, 46, 113, 0.7);
+    }
+}
+
+.portfolio-wrapper {
+    animation: borderGlow 3s infinite alternate;
+}
